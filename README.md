@@ -4,7 +4,10 @@ this repo contain a simple python code that scrap contact info using selenium
 ### Setup
 
 * Install python and code editor (vs code recommended)
-  [steps to install python on windows](https://www.tutorialspoint.com/how-to-install-python-in-windows)
+  
+[steps to install python on windows](https://www.tutorialspoint.com/how-to-install-python-in-windows)
+
+[Click here to install Vs code](https://code.visualstudio.com/docs/setup/windows)
   
 ## Installation on Linux, Mac OS and Windows
 * Clone project from the develop branch
