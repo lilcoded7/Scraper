@@ -12,7 +12,7 @@ this repo contain a simple python code that scrap contact info using selenium
 git clone https://github.com/lilcoded7/Mid-level-Django-Test.git
 ```
 * install requirements.txt file
-* ```
+```
  pip install -r requirements.txt
 ```
 To run the application cd to the project foleder run the command below
