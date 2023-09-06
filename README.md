@@ -1,5 +1,5 @@
 # Scraper
-this is a python code that allow users to enter their country code and phone number and extract the contact the phone numbers
+this repo contain a python code that allow users to enter their country code and phone number and extract the contact the phone numbers
 
 ### Setup
 
