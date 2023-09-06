@@ -1,5 +1,5 @@
 # Scraper
-this repo contain a simple python code that scrap contact info using selenium
+this is a python code that allow users to enter their country code and phone number and extract the contact the phone numbers
 
 ### Setup
 
