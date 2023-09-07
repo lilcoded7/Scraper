@@ -1,4 +1,5 @@
 from selenium import webdriver
+from DataBase import DB
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -12,12 +13,13 @@ def scraper():
     contact_input.send_keys('')
     submit_button = driver.find_element(By.CLASS_NAME, 'cursor')
     submit_button.click()
-    wait = WebDriverWait(driver, 630000)
+    wait = WebDriverWait(driver, 999)
     country_code = country_code_input.get_attribute('value')
     contact = contact_input.get_attribute('value')
-    
-    print('Country Code:', country_code.strip())
-    print('Contact:', contact.strip())
+    DB('phonenumbers').insert_data(country_code.strip(), contact.strip())
+    # print('it is passing here')
+    # print('Country Code:', country_code.strip())
+    # print('Contact:', contact.strip())
     driver.quit()
 
 

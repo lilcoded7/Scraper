@@ -1,6 +1,6 @@
 import sqlite3
 
-class MyDatabase:
+class DB:
     def __init__(self, db_name):
         self.db_name = db_name
         self.conn = None
@@ -59,16 +59,16 @@ class MyDatabase:
             if self.conn:
                 self.conn.close()
 
-# Example usage:
-if __name__ == "__main__":
-    db = MyDatabase("mydatabase.db")
+# # Example usage:
+# if __name__ == "__main__":
+#     db = MyDatabase("mydatabase.db")
 
-    # Insert sample data
-    db.insert_data("US", "123-456-7890")
-    db.insert_data("UK", "44-20-1234-5678")
+#     # Insert sample data
+#     db.insert_data("US", "123-456-7890")
+#     db.insert_data("UK", "44-20-1234-5678")
 
-    # Retrieve and print data
-    data = db.retrieve_data()
-    if data:
-        for row in data:
-            print(f"ID: {row[0]}, Country Code: {row[1]}, Contact: {row[2]}")
+#     # Retrieve and print data
+#     data = db.retrieve_data()
+#     if data:
+        # for row in data:
+        #     print(f"ID: {row[0]}, Country Code: {row[1]}, Contact: {row[2]}")
